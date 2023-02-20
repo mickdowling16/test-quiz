@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+/* main body styling */
+
+body {
+    background-color: #e90052;
+    padding: 0;
+    margin: 0;
+    font-family: Rubik;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#question {
+    height: 40px;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    
+
+}
+
+/* premier league logo styling and positioning  */
+#logo {
+    width: 300px;
+    height: 800%;
+}
+
+#logo-div {
+    margin-top: -20px;
+    position: absolute;
+    top: 0;
+}
+
+/* container and question area styling */
+/* parts of this code was taken from a video on web dev simplified YouTube channel. Linked in readme */
+#question-area {
+    margin-top: 150px;
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    bottom: 0;
+}
+
+/* button styling */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 0;
+    
+}
+
+.btn {
+    height: 60px;
+    background-color: #04f5ff;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.5rem;
+    font-family: Rubik;
+    width: 100%;
+}
+
+.btn:hover {
+    border: 2px solid black;
+    font-family: Rubik;
+}
+
+.control-buttons {
+    display: inline-block;
+    height: 60px;
+    background-color: #04f5ff;
+    border-radius: 50px;
+    border-color: black;
+    font-size: 1.5rem;
+    width: 40%;
+    font-family: Rubik;
+}
+
+#start-button {
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-family: Rubik;
+}
+
+#show-score-button {
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-family: Rubik;
+}
+
+#next-button {
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    font-family: Rubik;
+}
+
+#rules-button {
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 2rem;
+    font-family: Rubik;
+}
+
+#rules-button:hover {
+    background-color: #00ff85;
+}
+
+#rules {
+    background-color: white;
+    width: 800px;
+    max-width: 80%;
+    height: 350px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    bottom: 50; 
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#rules h1 {
+    text-align: center;
+}
+
+#rules p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#start-from-rules {
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 2rem;
+    font-family: Rubik;
+    text-align: center;
+}
+
+#start-from-rules:hover {
+    background-color: #00ff85;
+}
+
+#start-from-rules-div {
+    text-align: center;
+}
+
+
+
+/* styling for correct and incorrect answer */
+.correct {
+    background-color: #00ff85;
+  }
+  
+.wrong {
+    background-color: red;
+  }
+
+#start-button:hover, #next-button:hover {
+    background-color: #00ff85;
+    font-family: Rubik;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* score area code was taken from love maths runthrough project */
+#score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+.scores {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+/* media queries for page responsiveness  */
+
+@media screen and (max-width: 750px) {
+    #rules {
+        height: 450px;
+    }
+ 
+ }
+
+@media screen and (max-width: 700px) {
+   #question {
+    padding: 20px;
+   }
+
+   #answer-buttons {
+    padding-top: 10px;
+    font-size: 1rem;
+   }
+
+}
+
+@media screen and (max-width: 500px) {
+    #question {
+     padding: 20px;
+     font-size: 1em;
+     width: 90%;
+     margin: auto;
+    }
+ 
+    #answer-buttons {
+     font-size: 1rem;
+    }
+
+    .btn {
+        height: 50px;
+        font-size: medium;
+    }
+
+    .scores {
+        font-size: small;
+    }
+    
+    .home-page-buttons {
+        height: 50px;
+        font-size: small;
+    }
+
+    #start-button {
+        font-size: medium;
+        padding: 0;
+    }
+
+    #rules-button {
+        font-size: medium;
+        padding: 0;
+    }
+
+    #show-score-button {
+        font-size: medium;
+        padding: 0;
+    }
+
+    #next-button {
+        height: 50px;
+        font-size: medium;
+        padding: 0;
+    }
+
+    #start-from-rules {
+        height: 50px;
+        font-size: small;
+    }
+ }
+
+ @media screen and (max-width: 500px) { 
+    #rules {
+        height: 500px;
+    }
+ }

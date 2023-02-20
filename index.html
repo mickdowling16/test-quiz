@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Premier League Quiz</title>
+</head>
+<body>
+    <!-- some parts of this code were taken from Web Dev Simplified YouTube channel. Linked in readme -->
+    <div id="logo-div"><img id="logo" src="assets/images/premier-logo.webp" alt="premier league logo"></div>
+    <div id="question-area">
+    <div class="hide" id="game-area">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="button-grid">
+            <button class="btn ans-btn">Answer 1</button>
+            <button class="btn ans-btn">Answer 2</button>
+            <button class="btn ans-btn">Answer 3</button>
+            <button class="btn ans-btn">Answer 4</button>
+        </div>
+    </div>
+
+    <!-- some parts of this code were taken from Web Dev Simplified YouTube channel. Linked in readme -->
+    <div class="controls">
+        <button id="start-button" class="control-buttons home-page-buttons">Start Quiz</button>
+        <button id="show-score-button" class="control-buttons hide">Show Score</button>
+        <button id="rules-button" class="control-buttons home-page-buttons">Quiz Rules</button>
+        <button id="next-button" class="control-buttons hide">Next</button>
+    </div>
+    <!-- this score area code was taken from the love maths reun throught project -->
+    <div id="score-area" class="hide">
+        <p class="scores">Points Total: <span id="score">0</span></p>
+        <p class="scores">Goals Conceded: <span id="incorrect">0</span></p>
+    </div>
+  </div>
+
+  <div id="rules" class="hide">
+    <h1>Quiz Rules</h1>
+    <p>Welcome to the Premier League Quiz. Test your Premier League knowledge by answering 10 questions on past and present Premier League stats. Once an answer is selected there's no going back so choose carefully. The next button will load the next question and the counter at the bottom will keep your score. Can you get 10/10 and prove you're the Premier League quiz master. </p>
+    <div id="start-from-rules-div"><button id="start-from-rules" class="control-buttons">Start Quiz</button></div>
+  </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
